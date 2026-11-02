@@ -130,7 +130,7 @@
     menuButton.setAttribute('aria-expanded', String(next));
     menuButton.setAttribute('aria-label', next ? strings[language].menu_close : strings[language].menu_open);
   });
-  $('#primary-nav a').forEach(link => link.addEventListener('click', closeMenu));
+  $$('#primary-nav a').forEach(link => link.addEventListener('click', closeMenu));
   // Also close an open mobile menu after anchor changes from outside the nav.
   window.addEventListener('hashchange', closeMenu);
   document.addEventListener('click', event => {
