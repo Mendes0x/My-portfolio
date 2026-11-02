@@ -3,87 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f5ef">
-  <meta name="description" content="Mendes0x — desenvolvedor brasileiro. Projetos web, automação, bots, Linux e software feito com intenção.">
+  <meta name="theme-color" content="#f8f8f6">
+  <meta name="description" content="Mendes0x — desenvolvedor brasileiro. Web, automação, bots e ferramentas. Software simples, feito com intenção.">
   <meta name="author" content="Mendes0x">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://mendes0x.github.io/My-portfolio/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://mendes0x.github.io/My-portfolio/">
-  <meta property="og:title" content="Mendes0x — Developer & Builder">
-  <meta property="og:description" content="Desenvolvimento web, ferramentas, bots e automação. Ideias transformadas em software de verdade.">
+  <meta property="og:title" content="Mendes0x — Independent Developer">
+  <meta property="og:description" content="Desenvolvimento web, automação e ferramentas. Simplicidade, funcionalidade e atenção aos detalhes.">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
   <title>Mendes0x — Developer & Builder</title>
 </head>
 <body>
-<a class="skip-link" href="#main" data-i18n="skip">Ir para o conteúdo</a>
-<header class="site-header" id="top">
-  <div class="container header-row">
-    <a class="brand" href="#top" aria-label="Mendes0x, início">mendes<span>0x</span><span class="brand-period">.</span></a>
-    <nav id="primary-nav" class="primary-nav" aria-label="Navegação principal">
-      <a href="#about" data-i18n="nav_about">Sobre</a>
-      <a href="#projects" data-i18n="nav_projects">Projetos</a>
-      <a href="#skills" data-i18n="nav_skills">Stack</a>
-      <a href="#contact" data-i18n="nav_contact">Contato</a>
-    </nav>
-    <div class="header-actions">
-      <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language to English">EN <span aria-hidden="true">↗</span></button>
-      <a class="header-cta" href="#contact" data-i18n="say_hello">Vamos conversar <span aria-hidden="true">↗</span></a>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
-    </div>
-  </div>
-</header>
+  <a href="#main" class="skip-link" data-i18n="skip">Ir para o conteúdo</a>
 
-<main id="main">
-  <section class="hero container" aria-labelledby="hero-title">
-    <div class="hero-content">
-      <div class="eyebrow"><span class="mini-icon" aria-hidden="true">✳</span><span data-i18n="hero_eyebrow">DESENVOLVEDOR INDEPENDENTE · BRASIL</span></div>
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a href="#top" class="brand" aria-label="Mendes0x, início">mendes<span>0x</span><span class="brand-period">.</span></a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+        <a href="#about" data-i18n="nav_about">Sobre</a>
+        <a href="#projects" data-i18n="nav_projects">Projetos</a>
+        <a href="#skills" data-i18n="nav_skills">Stack</a>
+        <a href="#contact" data-i18n="nav_contact">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" id="language-toggle" class="language-toggle" aria-label="Switch language to English">EN <span aria-hidden="true">↗</span></button>
+        <a class="header-cta" href="#contact" data-i18n="say_hello">Vamos conversar <span aria-hidden="true">↗</span></a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="quiet-dot" aria-hidden="true"></span><span data-i18n="hero_eyebrow">DESENVOLVEDOR INDEPENDENTE · BRASIL</span></p>
       <h1 id="hero-title"><span data-i18n="hero_line1">Ideias em código.</span><br><em data-i18n="hero_line2">Feitas para funcionar.</em></h1>
-      <p class="hero-description" data-i18n="hero_description">Sou Mendes0x. Transformo ideias em sites, bots e ferramentas que unem funcionalidade, simplicidade e personalidade.</p>
-      <div class="hero-actions">
-        <a class="button button-dark" href="#projects"><span data-i18n="view_projects">Ver projetos</span><span aria-hidden="true">↗</span></a>
-        <a class="button button-text" href="https://github.com/Mendes0x" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-under"><span class="status-mark" aria-hidden="true"></span><span data-i18n="hero_footer">CRIANDO, APRENDENDO E MELHORANDO SEMPRE</span><span class="hero-number">/ 001</span></div>
-    </div>
-    <div class="hero-visual">
-      <div class="portrait-stage">
-        <div class="portrait-badge" aria-hidden="true"><span>BUILD<br>WITH<br>CARE.</span><span>✳</span></div>
-        <div class="portrait-frame">
-          <img src="https://avatars.githubusercontent.com/u/160092361?v=4" alt="Foto de perfil pública de Mendes0x no GitHub" width="640" height="640" fetchpriority="high">
+      <div class="hero-bottom">
+        <p class="hero-description" data-i18n="hero_description">Sou Mendes0x. Transformo ideias em sites, bots e ferramentas que unem funcionalidade, simplicidade e personalidade.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="text-link"><span data-i18n="view_projects">Ver projetos</span><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Mendes0x" class="quiet-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
-        <div class="portrait-caption"><span>FIG. 01 — MENDES0X</span><span>PERSONAL / ARCHIVE</span></div>
       </div>
-      <div class="visual-aside"><span>DEVELOPER / DESIGNER AT HEART</span><span class="visual-lines" aria-hidden="true">/////</span></div>
-    </div>
-  </section>
+      <div class="hero-footnote"><span data-i18n="hero_footer">CRIANDO, APRENDENDO E MELHORANDO SEMPRE</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
 
-  <div class="signal-bar" aria-hidden="true"><div class="signal-inner container"><span>SOFTWARE, BUILT WITH INTENTION.</span><span>✳</span><span>WEB / SYSTEMS / AUTOMATION</span><span>✳</span><span>MENDES0X © 2026</span></div></div>
-
-  <section class="about section container" id="about" aria-labelledby="about-heading">
-    <div class="section-label"><span>01 / ABOUT</span><span class="section-rule"></span><span data-i18n="about_label">UM POUCO SOBRE MIM</span></div>
-    <div class="about-layout">
-      <div><h2 class="display-heading" id="about-heading"><span data-i18n="about_heading1">Curiosidade</span><br><em data-i18n="about_heading2">que constrói.</em></h2></div>
-      <div class="about-copy">
-        <p class="lead" data-i18n="about_lead">A melhor maneira de aprender algo é transformar a ideia em um projeto real.</p>
-        <p data-i18n="about_paragraph1">Gosto de criar aplicações web, ferramentas de automação e bots para Discord. Entre interfaces e terminais Linux, busco soluções que sejam úteis, claras e fáceis de usar.</p>
-        <p data-i18n="about_paragraph2">Meu processo é simples: experimentar, construir, testar e melhorar. Cada projeto é uma oportunidade de descobrir algo novo.</p>
-        <a href="https://github.com/Mendes0x?tab=repositories" target="_blank" rel="noopener noreferrer" class="under-link"><span data-i18n="all_repos">Explorar meus repositórios</span><span aria-hidden="true">↗</span></a>
+    <section id="about" class="about section container" aria-labelledby="about-heading">
+      <div class="section-label"><span>01 / ABOUT</span><span data-i18n="about_label">UM POUCO SOBRE MIM</span></div>
+      <div class="about-layout">
+        <h2 class="display-heading" id="about-heading"><span data-i18n="about_heading1">Curiosidade</span><br><em data-i18n="about_heading2">que constrói.</em></h2>
+        <div class="about-copy">
+          <p class="lead" data-i18n="about_lead">A melhor maneira de aprender algo é transformar a ideia em um projeto real.</p>
+          <p data-i18n="about_paragraph1">Gosto de criar aplicações web, ferramentas de automação e bots para Discord. Entre interfaces e terminais Linux, busco soluções que sejam úteis, claras e fáceis de usar.</p>
+          <p data-i18n="about_paragraph2">Meu processo é simples: experimentar, construir, testar e melhorar. Cada projeto é uma oportunidade de descobrir algo novo.</p>
+          <a href="https://github.com/Mendes0x?tab=repositories" class="under-link" target="_blank" rel="noopener noreferrer"><span data-i18n="all_repos">Explorar meus repositórios</span> <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects section" id="projects" aria-labelledby="projects-heading">
-    <div class="container">
-      <div class="section-label"><span>02 / WORK</span><span class="section-rule"></span><span data-i18n="work_label">PROJETOS SELECIONADOS</span></div>
-      <div class="projects-intro">
+    <section id="projects" class="projects section container" aria-labelledby="projects-heading">
+      <div class="section-label"><span>02 / WORK</span><span data-i18n="work_label">PROJETOS SELECIONADOS</span></div>
+      <div class="projects-heading">
         <h2 class="display-heading" id="projects-heading"><span data-i18n="work_heading1">Feito para</span><br><em data-i18n="work_heading2">ser usado.</em></h2>
         <p data-i18n="work_intro">Uma seleção de projetos públicos. Cada um nasceu de uma ideia, de um desafio ou da vontade de fazer algo funcionar melhor.</p>
       </div>
@@ -95,100 +83,107 @@
       </div>
 
       <div class="project-list">
-        <article class="project project-featured" data-category="web">
-          <div class="project-visual visual-media" aria-hidden="true">
-            <span class="visual-index">PROJECT / 01</span>
-            <div class="media-object">
-              <div class="media-object-head"><span>MEDIADOCK</span><span>LOCAL / 02</span></div>
-              <div class="media-object-display"><span class="media-reel">◉</span><span class="media-reel">◉</span></div>
-              <div class="media-object-footer"><span>PLAY WHAT YOU OWN</span><span>▰ ▰ ▰</span></div>
-            </div>
-            <span class="visual-bottom">TAPE LAB — MEDIA WORKSPACE</span>
-          </div>
-          <div class="project-copy">
-            <span class="project-meta">01 / WEB APPLICATION</span>
-            <h3>MediaDock<span class="project-period">.</span></h3>
-            <p data-i18n="project_media">Uma aplicação local para gerenciar downloads de mídia com fila de tarefas, progresso em tempo real e biblioteca de arquivos.</p>
-            <div class="project-tags"><span>Node.js</span><span>Express</span><span>yt-dlp</span></div>
-            <a class="project-link" href="https://github.com/Mendes0x/web-site-dowloader-mp3" target="_blank" rel="noopener noreferrer"><span data-i18n="view_repository">Ver repositório</span><span aria-hidden="true">↗</span></a>
-          </div>
+        <article class="project" data-category="web">
+          <a class="project-link" href="https://github.com/Mendes0x/web-site-dowloader-mp3" target="_blank" rel="noopener noreferrer">
+            <span class="project-index">01</span>
+            <span class="project-content">
+              <span class="project-type">WEB APPLICATION / NODE.JS</span>
+              <span class="project-title">MediaDock</span>
+              <span class="project-desc" data-i18n="project_media">Uma aplicação local para gerenciar downloads de mídia com fila de tarefas, progresso em tempo real e biblioteca de arquivos.</span>
+              <span class="project-tech">Node.js <i>·</i> Express <i>·</i> yt-dlp</span>
+            </span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
         </article>
-
-        <article class="project project-featured reverse" data-category="web">
-          <div class="project-visual visual-dashboard" aria-hidden="true">
-            <span class="visual-index">PROJECT / 02</span>
-            <div class="dash-shell"><div class="dash-top"><span>● ● ●</span><span>BOT CONTROL / ONLINE</span></div><div class="dash-body"><div class="dash-sidebar"><i></i><i></i><i></i><i></i></div><div class="dash-main"><div class="dash-status"><span>STATUS</span><strong>● ACTIVE</strong></div><div class="dash-grid"><b></b><b></b><b></b><b></b></div><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
-            <span class="visual-bottom">MANAGE / MONITOR / BUILD</span>
-          </div>
-          <div class="project-copy">
-            <span class="project-meta">02 / WEB DASHBOARD</span>
-            <h3>Bot Framework<span class="project-period">.</span></h3>
-            <p data-i18n="project_bot">Dashboard para bots do Discord com status, informações de execução, comandos e gerenciamento de módulos.</p>
-            <div class="project-tags"><span>JavaScript</span><span>Node.js</span><span>Express</span></div>
-            <a class="project-link" href="https://github.com/Mendes0x/bot-framework-dashboard" target="_blank" rel="noopener noreferrer"><span data-i18n="view_repository">Ver repositório</span><span aria-hidden="true">↗</span></a>
-          </div>
+        <article class="project" data-category="web">
+          <a class="project-link" href="https://github.com/Mendes0x/bot-framework-dashboard" target="_blank" rel="noopener noreferrer">
+            <span class="project-index">02</span>
+            <span class="project-content">
+              <span class="project-type">DASHBOARD / JAVASCRIPT</span>
+              <span class="project-title">Bot Framework</span>
+              <span class="project-desc" data-i18n="project_bot">Dashboard para bots do Discord com status, informações de execução, comandos e gerenciamento de módulos.</span>
+              <span class="project-tech">JavaScript <i>·</i> Node.js <i>·</i> Express</span>
+            </span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
         </article>
-      </div>
-
-      <div class="more-heading"><h3 data-i18n="more_projects">Também no meu GitHub</h3><span>03—05 / ARCHIVE</span></div>
-      <div class="mini-projects">
-        <article class="mini-project" data-category="tools">
-          <div class="mini-top"><span>03 / SYSTEMS</span><span class="mini-symbol" aria-hidden="true">⌘</span></div>
-          <h4>VPN Manager</h4>
-          <p data-i18n="project_vpn">Controle e diagnóstico de conexões OpenVPN e NetworkManager no Linux.</p>
-          <div class="mini-bottom"><span>BASH / LINUX</span><a href="https://github.com/Mendes0x/vpn-tor" target="_blank" rel="noopener noreferrer" aria-label="VPN Manager no GitHub">↗</a></div>
+        <article class="project" data-category="tools">
+          <a class="project-link" href="https://github.com/Mendes0x/vpn-tor" target="_blank" rel="noopener noreferrer">
+            <span class="project-index">03</span>
+            <span class="project-content">
+              <span class="project-type">SYSTEMS / BASH</span>
+              <span class="project-title">VPN Manager</span>
+              <span class="project-desc" data-i18n="project_vpn">Controle e diagnóstico de conexões OpenVPN e NetworkManager no Linux.</span>
+              <span class="project-tech">Bash <i>·</i> Linux <i>·</i> OpenVPN</span>
+            </span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
         </article>
-        <article class="mini-project" data-category="tools">
-          <div class="mini-top"><span>04 / NETWORK</span><span class="mini-symbol" aria-hidden="true">◎</span></div>
-          <h4>Network Toolkit</h4>
-          <p data-i18n="project_network">Utilitários para diagnóstico, rastreamento de rotas e análise de rede.</p>
-          <div class="mini-bottom"><span>BASH / NMAP</span><a href="https://github.com/Mendes0x/Network-Toolkit" target="_blank" rel="noopener noreferrer" aria-label="Network Toolkit no GitHub">↗</a></div>
+        <article class="project" data-category="tools">
+          <a class="project-link" href="https://github.com/Mendes0x/Network-Toolkit" target="_blank" rel="noopener noreferrer">
+            <span class="project-index">04</span>
+            <span class="project-content">
+              <span class="project-type">NETWORK / DIAGNOSTICS</span>
+              <span class="project-title">Network Toolkit</span>
+              <span class="project-desc" data-i18n="project_network">Utilitários para diagnóstico, rastreamento de rotas e análise de rede.</span>
+              <span class="project-tech">Bash <i>·</i> Nmap <i>·</i> Linux</span>
+            </span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
         </article>
-        <article class="mini-project" data-category="tools">
-          <div class="mini-top"><span>05 / AUTOMATION</span><span class="mini-symbol" aria-hidden="true">↓</span></div>
-          <h4>YouTube Downloader</h4>
-          <p data-i18n="project_youtube">Ferramenta em Bash para baixar mídia autorizada com opções de formato.</p>
-          <div class="mini-bottom"><span>BASH / YT-DLP</span><a href="https://github.com/Mendes0x/youtube-downloader" target="_blank" rel="noopener noreferrer" aria-label="YouTube Downloader no GitHub">↗</a></div>
+        <article class="project" data-category="tools">
+          <a class="project-link" href="https://github.com/Mendes0x/youtube-downloader" target="_blank" rel="noopener noreferrer">
+            <span class="project-index">05</span>
+            <span class="project-content">
+              <span class="project-type">AUTOMATION / TERMINAL</span>
+              <span class="project-title">YouTube Downloader</span>
+              <span class="project-desc" data-i18n="project_youtube">Ferramenta em Bash para baixar mídia autorizada com opções de formato.</span>
+              <span class="project-tech">Bash <i>·</i> yt-dlp <i>·</i> FFmpeg</span>
+            </span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
         </article>
       </div>
       <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
-      <a class="browse-all" href="https://github.com/Mendes0x?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="see_everything">Explorar todos os projetos</span><span aria-hidden="true">↗</span></a>
-    </div>
-  </section>
+      <a class="under-link all-projects" href="https://github.com/Mendes0x?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="see_everything">Explorar todos os projetos</span> <span aria-hidden="true">↗</span></a>
+    </section>
 
-  <section class="skills section container" id="skills" aria-labelledby="skills-heading">
-    <div class="section-label"><span>03 / SKILLS</span><span class="section-rule"></span><span data-i18n="skills_label">MINHAS FERRAMENTAS</span></div>
-    <div class="skills-grid">
-      <div><h2 id="skills-heading" class="display-heading"><span data-i18n="skills_heading1">Sempre</span><br><em data-i18n="skills_heading2">aprendendo.</em></h2><p class="skills-note" data-i18n="skills_note">Tecnologias com as quais trabalho, estudo e experimento. Sem promessas exageradas, só evolução.</p></div>
-      <div class="skills-list">
-        <div class="skill-group"><span>01</span><div><h3>Languages</h3><p>JavaScript <i>/</i> TypeScript <i>/</i> Python <i>/</i> Bash</p></div></div>
-        <div class="skill-group"><span>02</span><div><h3>Web & Backend</h3><p>HTML <i>/</i> CSS <i>/</i> Node.js <i>/</i> Express <i>/</i> React</p></div></div>
-        <div class="skill-group"><span>03</span><div><h3>Systems & Tools</h3><p>Linux <i>/</i> Git <i>/</i> Docker <i>/</i> FFmpeg <i>/</i> Discord.js</p></div></div>
+    <section id="skills" class="skills section container" aria-labelledby="skills-heading">
+      <div class="section-label"><span>03 / SKILLS</span><span data-i18n="skills_label">MINHAS FERRAMENTAS</span></div>
+      <div class="skills-layout">
+        <div><h2 class="display-heading" id="skills-heading"><span data-i18n="skills_heading1">Sempre</span><br><em data-i18n="skills_heading2">aprendendo.</em></h2><p class="skills-note" data-i18n="skills_note">Tecnologias com as quais trabalho, estudo e experimento. Sem promessas exageradas, só evolução.</p></div>
+        <div class="skills-list">
+          <div class="skill-group"><span>01</span><div><h3>Languages</h3><p>JavaScript <i>/</i> TypeScript <i>/</i> Python <i>/</i> Bash</p></div></div>
+          <div class="skill-group"><span>02</span><div><h3>Web & Backend</h3><p>HTML <i>/</i> CSS <i>/</i> Node.js <i>/</i> Express <i>/</i> React</p></div></div>
+          <div class="skill-group"><span>03</span><div><h3>Systems & Tools</h3><p>Linux <i>/</i> Git <i>/</i> Docker <i>/</i> FFmpeg <i>/</i> Discord.js</p></div></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact" id="contact" aria-labelledby="contact-heading">
-    <div class="container contact-inner">
-      <div class="contact-top"><span>04 / CONTACT</span><span data-i18n="contact_top">TEM UMA IDEIA?</span></div>
-      <div class="contact-layout">
-        <div><p class="contact-eyebrow" data-i18n="contact_eyebrow">O PRÓXIMO PROJETO COMEÇA COM UMA CONVERSA.</p><h2 id="contact-heading"><span data-i18n="contact_heading1">Vamos criar</span><br><em data-i18n="contact_heading2">algo juntos?</em></h2></div>
-        <div class="contact-details"><p data-i18n="contact_description">Se quiser conversar sobre desenvolvimento, projetos ou alguma ideia, pode me chamar. Estou sempre aberto a boas conversas.</p>
+    <section id="contact" class="contact section container" aria-labelledby="contact-heading">
+      <div class="section-label"><span>04 / CONTACT</span><span data-i18n="contact_top">TEM UMA IDEIA?</span></div>
+      <p class="contact-eyebrow" data-i18n="contact_eyebrow">O PRÓXIMO PROJETO COMEÇA COM UMA CONVERSA.</p>
+      <h2 class="contact-heading" id="contact-heading"><span data-i18n="contact_heading1">Vamos criar</span><br><em data-i18n="contact_heading2">algo juntos?</em></h2>
+      <div class="contact-bottom">
+        <p data-i18n="contact_description">Se quiser conversar sobre desenvolvimento, projetos ou alguma ideia, pode me chamar. Estou sempre aberto a boas conversas.</p>
+        <div class="contact-details">
           <a class="contact-email" href="mailto:renegadothedev001@gmail.com">renegadothedev001@gmail.com <span aria-hidden="true">↗</span></a>
-          <div class="contact-buttons"><button id="copy-email" data-email="renegadothedev001@gmail.com" type="button" data-i18n="copy_email">Copiar e-mail</button><a href="https://github.com/Mendes0x" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          <div class="contact-actions">
+            <button id="copy-email" data-email="renegadothedev001@gmail.com" type="button" data-i18n="copy_email">Copiar e-mail</button>
+            <a href="https://github.com/Mendes0x" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
           <p id="copy-status" role="status" aria-live="polite" class="copy-status"></p>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <a href="#top" class="footer-logo">mendes<span>0x</span>.</a>
-    <span>© <span id="year">2026</span> MENDES0X</span>
-    <a href="#top" class="back-top"><span data-i18n="back_to_top">Voltar ao topo</span> ↑</a>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="footer-logo">mendes<span>0x</span>.</a>
+      <span>© <span id="year">2026</span> MENDES0X</span>
+      <a href="#top" class="back-top"><span data-i18n="back_to_top">Voltar ao topo</span> ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
