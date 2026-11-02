@@ -1,54 +1,74 @@
-# Renegado — Personal Portfolio
+# 🦇 Renegado — Building in the Dark
 
-Uma experiência pessoal com visual dark/editorial, inspiração alternativa e foco em projetos reais.
+Portfólio pessoal com estética **alternative / goth / brutalist editorial**, criado especialmente para combinar com a identidade do perfil [@renegadothedev](https://github.com/renegadothedev).
 
-## Sobre
+**Site:** https://renegadothedev.github.io/My-portfolio/
 
-Portfólio estático de Renegado (@renegadothedev), construído com HTML, CSS e JavaScript puro. A página apresenta cinco repositórios reais: Bot Framework Dashboard, VPN Manager, Network Toolkit, YouTube Downloader e Web Site Downloader MP3.
+## Conceito visual
+
+Identidade construída a partir das cores e do tom do README de perfil:
+- `#0D0A10` — preto profundo
+- `#8B1E3F` — vinho
+- `#C52B35` — vermelho intenso associado à imagem do perfil
+- `#B57EDC` — roxo de contraste
+
+O layout utiliza tipografia impactante, composição inspirada em zines/editorial e a foto de perfil pública do GitHub como elemento central, em vez de cartões genéricos de dashboard.
+
+## Projetos exibidos
+
+1. [Bot Framework Dashboard](https://github.com/renegadothedev/bot-framework-dashboard)
+2. [VPN Manager](https://github.com/renegadothedev/vpn-tor)
+3. [Network Toolkit](https://github.com/renegadothedev/Network-Toolkit)
+4. [YouTube Downloader](https://github.com/renegadothedev/youtube-downloader)
+5. [Web Site Downloader MP3](https://github.com/renegadothedev/web-site-dowloader-mp3)
+
+As descrições correspondem ao material disponível publicamente nos respectivos repositórios. A ilustração de dashboard é conceitual, sem dados em tempo real.
 
 ## Recursos
 
-- Visual dark/goth com tipografia editorial, órbitas e ilustrações feitas em CSS.
-- Layout responsivo para desktop, tablet e celular; menu móvel acessível.
-- Projetos com filtros funcionais e links diretos para o código no GitHub.
-- Navegação rápida por Ctrl+K (ou Cmd+K), incluindo fechamento por Esc.
-- Atalho para copiar e-mail, com alternativa visível quando Clipboard API não está disponível.
-- Microinterações, progresso de leitura e revelação de conteúdo no scroll.
-- Respeito à preferência de movimento reduzido e foco visível para navegação por teclado.
-- Sem framework, sem build e sem API externa obrigatória para carregar os projetos.
-- Metadados básicos para SEO, compartilhamento e favicon SVG.
+- HTML semântico, CSS autoral, JavaScript puro; **sem build, sem framework obrigatório**
+- Estilo editorial de alto contraste, tipografia grande, preto/vinho/vermelho e detalhes roxos
+- Identidade e avatar do GitHub no destaque inicial
+- Layout responsivo para celular, tablet e desktop
+- Filtros reais por categoria (Web / Ferramentas)
+- Menu móvel, navegação rápida com Ctrl+K / Cmd+K e modal nativo
+- Copiar e-mail (com mensagem de fallback para navegadores sem Clipboard API)
+- Barra de progresso e animações sutis com respeito a `prefers-reduced-motion`
+- Links acessíveis, indicação de foco e conteúdo visível mesmo sem JavaScript
+- Metadados básicos de SEO e compartilhamento; favicon próprio em SVG
 
-## Como executar
+## Executar localmente
 
-Clone o repositório e abra o arquivo index.html no navegador. Para usar com servidor local:
+Abra o arquivo `index.html` diretamente no navegador ou execute:
 
-    python -m http.server 8000
+```bash
+python -m http.server 8000
+```
 
-Depois acesse http://localhost:8000.
+Acesse `http://localhost:8000`.
 
-## Arquivos
+## Estrutura
 
-- index.html — estrutura semântica, textos, links e metadados.
-- style.css — identidade visual, responsividade e efeitos.
-- script.js — navegação, filtros, modal, clipboard, animação e progresso.
-- favicon.svg — ícone vetorial do projeto.
+```text
+index.html  — conteúdo e estrutura da página
+style.css   — layout editorial e versões responsivas
+script.js   — navegação, filtros, acessibilidade e interações
+favicon.svg — marca vetorial
+README.md   — documentação
+```
 
-## Editando
+## Editar
 
-Textos e projetos ficam diretamente em index.html. Para adicionar um projeto, duplique um article.project-card dentro de .projects-grid, ajuste a categoria em data-category e atualize a contagem de cada filtro no HTML. O endereço de e-mail aparece nos links mailto e no atributo data-email do botão de cópia.
+Projetos e textos estão em `index.html`. Ao adicionar/remover projetos, altere as contagens indicadas nos botões de filtro. As categorias são definidas por `data-category="web"` ou `data-category="tools"`.
 
-Os mockups nos cards são ilustrações conceituais, não métricas em tempo real.
+O contato profissional usa o endereço divulgado no perfil GitHub: `renegadothedev001@gmail.com`.
+
+## Créditos de direção criativa
+
+Composição **original** inspirada em padrões de portfólios editoriais, brutalistas e experimentais. Referências de pesquisa: [Killian Herzer](https://killianherzer.com/), [Serhii Churilov no Awwwards](https://www.awwwards.com/inspiration/about-page-serhii-churilov), [Henry Codes](https://henry.codes/). Não há código, assets ou layouts copiados desses sites.
 
 ## Publicação
 
-O site é estático e compatível com GitHub Pages. Se o Pages estiver configurado para publicar a raiz da branch main, as atualizações aparecem após o deploy da plataforma.
+Compatível com GitHub Pages servindo a raiz da branch `main`. Publicação depende das configurações de Pages do repositório.
 
-## Acessibilidade
-
-A página usa landmarks semânticos, botão com aria-expanded no menu, filtros com aria-pressed, atualização com aria-live e suporte a prefers-reduced-motion. O site continua navegável mesmo sem JavaScript (exceto recursos opcionais interativos).
-
-## Autor
-
-Renegado — https://github.com/renegadothedev
-
-Contato: joaovitorbds752@gmail.com
+— **Renegado** / [GitHub](https://github.com/renegadothedev)
