@@ -7,13 +7,13 @@ A clean, editorial portfolio about the things I build, learn, and experiment wit
 
 ## About
 
-A static, bilingual **Portuguese / English** personal website built with semantic HTML, CSS, and vanilla JavaScript. It uses a warm, paper-like palette, restrained blue-gray accents, refined typography, custom CSS illustrations, and the current GitHub avatar.
+A static, bilingual **Portuguese / English** personal website built with semantic HTML, CSS, and vanilla JavaScript. It uses an ultra-minimal, typography-first visual system: off-white background, graphite text, subtle gray-green accents, fine dividers and generous whitespace. No portrait, hero artwork, image cards or decorative graphics.
 
 This repository contains only the front-end website. It requires **no Node.js server, database, API key, build step, or hosting service beyond static files**.
 
 ### Highlights
 
-- Responsive editorial layout for mobile, tablet, and desktop.
+- Ultra-minimal responsive editorial layout with no personal photographs or decorative imagery.
 - Portfolio projects linked directly to their current GitHub repositories.
 - PT/EN language switch, with the choice saved locally when storage is available.
 - Filters for web projects and command-line tools.
@@ -65,7 +65,7 @@ This was previously linked using the old GitHub username; the updated site uses 
 ## Customize
 
 - `index.html` — page content, SEO, project cards, semantic layout.
-- `style.css` — palette, typography, responsive rules, original CSS artwork.
+- `style.css` — palette, typography, responsive rules, understated typography and responsive spacing.
 - `script.js` — PT/EN text, navigation, filters and contact interaction.
 - `favicon.svg` — original monogram.
 - `tests/` — offline markup/link checks (no media downloads).

@@ -61,3 +61,24 @@ test('no remote javascript, tracking beacon or absolute asset paths', () => {
   assert.match(html, /src="\.\/script\.js"/);
   assert.match(fs.readFileSync(path.join(root,'robots.txt'),'utf8'),/Sitemap: https:\/\/mendes0x\.github\.io/);
 });
+
+test('ultra-minimal design never includes profile photography or decorative images', () => {
+  assert.doesNotMatch(html, /<img\\b/i);
+  assert.doesNotMatch(html, /avatars\\.githubusercontent\\.com/i);
+  assert.doesNotMatch(html, /hero-visual|portrait-frame|media-object|dash-shell/i);
+  assert.doesNotMatch(css, /background-image\\s*:/i);
+  assert.doesNotMatch(html, /<canvas\\b|<svg\\b/i);
+  assert.match(css, /--bg:#f8f8f6/);
+  assert.match(html, /data-i18n="hero_line1">Menos ruído\\./);
+  assert.match(html, /data-i18n="hero_line2">Mais intenção\\./);
+});
+
+test('all portfolio projects are presented as keyboard-accessible links', () => {
+  assert.equal((html.match(/class="project" data-category=/g)||[]).length, 5);
+  assert.equal((html.match(/class="project-link"/g)||[]).length, 5);
+  assert.equal((html.match(/class="project-arrow"/g)||[]).length, 5);
+  for (const section of ['about','projects','skills','contact']) {
+    assert.ok(html.includes('id="' + section + '"'));
+  }
+  assert.match(css, /:focus-visible/);
+});
