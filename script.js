@@ -87,9 +87,25 @@
       if (first) first.textContent = text;
       else element.prepend(document.createTextNode(text));
     }
-    languageToggle.innerHTML = language === 'pt' ? 'EN <span aria-hidden="true">↗</span>' : 'PT <span aria-hidden="true">↗</span>';
+    // Keep the button's icon node; replacing innerHTML would recreate it on every switch.
+    const langText = language === 'pt' ? 'EN' : 'PT';
+    const langNode = [...languageToggle.childNodes].find(node => node.nodeType === Node.TEXT_NODE);
+    if (langNode) langNode.textContent = langText + ' ';
+    else languageToggle.prepend(document.createTextNode(langText + ' '));
     languageToggle.setAttribute('aria-label', language === 'pt' ? 'Switch language to English' : 'Mudar idioma para português');
-    $('#menu-toggle')?.setAttribute('aria-label', $('#menu-toggle').getAttribute('aria-expanded') === 'true' ? dict.menu_close : dict.menu_open);
+
+    const nav = $('#primary-nav');
+    const filterGroup = $('.filter-row');
+    if (nav) nav.setAttribute('aria-label', language === 'pt' ? 'Navegação principal' : 'Primary navigation');
+    if (filterGroup) filterGroup.setAttribute('aria-label', language === 'pt' ? 'Filtrar projetos' : 'Filter projects');
+    const menuToggle = $('#menu-toggle');
+    if (menuToggle) {
+      const open = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-label', open ? dict.menu_close : dict.menu_open);
+    }
+    document.title = language === 'pt' ? 'Mendes0x — Desenvolvedor' : 'Mendes0x — Developer';
+    const ogLocale = $('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.content = language === 'pt' ? 'pt_BR' : 'en_US';
     const description = $('meta[name="description"]');
     if (description) {
       description.content = language === 'pt'
@@ -114,7 +130,9 @@
     menuButton.setAttribute('aria-expanded', String(next));
     menuButton.setAttribute('aria-label', next ? strings[language].menu_close : strings[language].menu_open);
   });
-  $$('#primary-nav a').forEach(link => link.addEventListener('click', closeMenu));
+  $('#primary-nav a').forEach(link => link.addEventListener('click', closeMenu));
+  // Also close an open mobile menu after anchor changes from outside the nav.
+  window.addEventListener('hashchange', closeMenu);
   document.addEventListener('click', event => {
     if (menu && menuButton && !menu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
   });
