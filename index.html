@@ -3,180 +3,192 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0d0a10">
-  <meta name="description" content="Renegado — desenvolvimento web, bots e ferramentas open source. Building in the dark, one idea at a time.">
-  <meta name="author" content="Renegado">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Mendes0x — desenvolvedor brasileiro. Projetos web, automação, bots, Linux e software feito com intenção.">
+  <meta name="author" content="Mendes0x">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://mendes0x.github.io/My-portfolio/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:url" content="https://renegadothedev.github.io/My-portfolio/">
-  <meta property="og:title" content="Renegado — Building in the Dark">
-  <meta property="og:description" content="Independent developer. Bots, tools & thoughtful digital experiences.">
+  <meta property="og:url" content="https://mendes0x.github.io/My-portfolio/">
+  <meta property="og:title" content="Mendes0x — Developer & Builder">
+  <meta property="og:description" content="Desenvolvimento web, ferramentas, bots e automação. Ideias transformadas em software de verdade.">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://renegadothedev.github.io/My-portfolio/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <title>Renegado — Building in the Dark</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Mendes0x — Developer & Builder</title>
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="site-header" id="topo">
-    <div class="wrap header-inner">
-      <a class="wordmark" href="#topo" aria-label="Renegado, início">rene<span>gado.</span><span class="wordmark-star" aria-hidden="true">✳</span></a>
-      <nav class="nav" id="main-nav" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#stack">Stack</a>
-        <a href="#contato">Contato</a>
-      </nav>
-      <div class="header-actions">
-        <button class="quick-access" id="open-search" type="button" aria-label="Abrir navegação rápida (Ctrl K)">⌘ <kbd>K</kbd></button>
-        <a class="header-contact" href="mailto:renegadothedev001@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
-        <button class="menu-button" id="menu-button" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+<a class="skip-link" href="#main" data-i18n="skip">Ir para o conteúdo</a>
+<header class="site-header" id="top">
+  <div class="container header-row">
+    <a class="brand" href="#top" aria-label="Mendes0x, início">mendes<span>0x</span><span class="brand-period">.</span></a>
+    <nav id="primary-nav" class="primary-nav" aria-label="Navegação principal">
+      <a href="#about" data-i18n="nav_about">Sobre</a>
+      <a href="#projects" data-i18n="nav_projects">Projetos</a>
+      <a href="#skills" data-i18n="nav_skills">Stack</a>
+      <a href="#contact" data-i18n="nav_contact">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language to English">EN <span aria-hidden="true">↗</span></button>
+      <a class="header-cta" href="#contact" data-i18n="say_hello">Vamos conversar <span aria-hidden="true">↗</span></a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero container" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <div class="eyebrow"><span class="mini-icon" aria-hidden="true">✳</span><span data-i18n="hero_eyebrow">DESENVOLVEDOR INDEPENDENTE · BRASIL</span></div>
+      <h1 id="hero-title"><span data-i18n="hero_line1">Ideias em código.</span><br><em data-i18n="hero_line2">Feitas para funcionar.</em></h1>
+      <p class="hero-description" data-i18n="hero_description">Sou Mendes0x. Transformo ideias em sites, bots e ferramentas que unem funcionalidade, simplicidade e personalidade.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#projects"><span data-i18n="view_projects">Ver projetos</span><span aria-hidden="true">↗</span></a>
+        <a class="button button-text" href="https://github.com/Mendes0x" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-under"><span class="status-mark" aria-hidden="true"></span><span data-i18n="hero_footer">CRIANDO, APRENDENDO E MELHORANDO SEMPRE</span><span class="hero-number">/ 001</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="portrait-stage">
+        <div class="portrait-badge" aria-hidden="true"><span>BUILD<br>WITH<br>CARE.</span><span>✳</span></div>
+        <div class="portrait-frame">
+          <img src="https://avatars.githubusercontent.com/u/160092361?v=4" alt="Foto de perfil pública de Mendes0x no GitHub" width="640" height="640" fetchpriority="high">
+        </div>
+        <div class="portrait-caption"><span>FIG. 01 — MENDES0X</span><span>PERSONAL / ARCHIVE</span></div>
+      </div>
+      <div class="visual-aside"><span>DEVELOPER / DESIGNER AT HEART</span><span class="visual-lines" aria-hidden="true">/////</span></div>
+    </div>
+  </section>
+
+  <div class="signal-bar" aria-hidden="true"><div class="signal-inner container"><span>SOFTWARE, BUILT WITH INTENTION.</span><span>✳</span><span>WEB / SYSTEMS / AUTOMATION</span><span>✳</span><span>MENDES0X © 2026</span></div></div>
+
+  <section class="about section container" id="about" aria-labelledby="about-heading">
+    <div class="section-label"><span>01 / ABOUT</span><span class="section-rule"></span><span data-i18n="about_label">UM POUCO SOBRE MIM</span></div>
+    <div class="about-layout">
+      <div><h2 class="display-heading" id="about-heading"><span data-i18n="about_heading1">Curiosidade</span><br><em data-i18n="about_heading2">que constrói.</em></h2></div>
+      <div class="about-copy">
+        <p class="lead" data-i18n="about_lead">A melhor maneira de aprender algo é transformar a ideia em um projeto real.</p>
+        <p data-i18n="about_paragraph1">Gosto de criar aplicações web, ferramentas de automação e bots para Discord. Entre interfaces e terminais Linux, busco soluções que sejam úteis, claras e fáceis de usar.</p>
+        <p data-i18n="about_paragraph2">Meu processo é simples: experimentar, construir, testar e melhorar. Cada projeto é uma oportunidade de descobrir algo novo.</p>
+        <a href="https://github.com/Mendes0x?tab=repositories" target="_blank" rel="noopener noreferrer" class="under-link"><span data-i18n="all_repos">Explorar meus repositórios</span><span aria-hidden="true">↗</span></a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main id="conteudo">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-main">
-        <div class="hero-copy">
-          <p class="eyebrow hero-eyebrow"><span class="status-dot" aria-hidden="true"></span> INDEPENDENT DEVELOPER <span class="eyebrow-divider">/</span> BRAZIL</p>
-          <h1 id="hero-title">BUILDING<br>IN THE<br><em>DARK<span class="accent-period">.</span></em></h1>
-          <div class="hero-under">
-            <p>Sou Renegado. Crio ferramentas, bots e experiências digitais com personalidade, atenção aos detalhes e vontade de fazer diferente.</p>
-            <div class="hero-actions">
-              <a class="main-link" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
-              <a class="quiet-link" href="https://github.com/renegadothedev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  <section class="projects section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-label"><span>02 / WORK</span><span class="section-rule"></span><span data-i18n="work_label">PROJETOS SELECIONADOS</span></div>
+      <div class="projects-intro">
+        <h2 class="display-heading" id="projects-heading"><span data-i18n="work_heading1">Feito para</span><br><em data-i18n="work_heading2">ser usado.</em></h2>
+        <p data-i18n="work_intro">Uma seleção de projetos públicos. Cada um nasceu de uma ideia, de um desafio ou da vontade de fazer algo funcionar melhor.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filtrar projetos">
+        <span class="filter-label" data-i18n="filter_label">FILTRAR POR</span>
+        <button type="button" class="filter active" data-filter="all" aria-pressed="true"><span data-i18n="filter_all">Todos</span> <small>05</small></button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false"><span data-i18n="filter_web">Web</span> <small>02</small></button>
+        <button type="button" class="filter" data-filter="tools" aria-pressed="false"><span data-i18n="filter_tools">Ferramentas</span> <small>03</small></button>
+      </div>
+
+      <div class="project-list">
+        <article class="project project-featured" data-category="web">
+          <div class="project-visual visual-media" aria-hidden="true">
+            <span class="visual-index">PROJECT / 01</span>
+            <div class="media-object">
+              <div class="media-object-head"><span>MEDIADOCK</span><span>LOCAL / 02</span></div>
+              <div class="media-object-display"><span class="media-reel">◉</span><span class="media-reel">◉</span></div>
+              <div class="media-object-footer"><span>PLAY WHAT YOU OWN</span><span>▰ ▰ ▰</span></div>
             </div>
+            <span class="visual-bottom">TAPE LAB — MEDIA WORKSPACE</span>
           </div>
-        </div>
-        <figure class="hero-portrait">
-          <div class="portrait-image">
-            <img src="https://avatars.githubusercontent.com/u/160092361?v=4" width="480" height="480" alt="Imagem de perfil alternativa de Renegado, em tons vermelhos" fetchpriority="high">
-            <span class="portrait-corner portrait-corner--tl" aria-hidden="true"></span>
-            <span class="portrait-corner portrait-corner--br" aria-hidden="true"></span>
+          <div class="project-copy">
+            <span class="project-meta">01 / WEB APPLICATION</span>
+            <h3>MediaDock<span class="project-period">.</span></h3>
+            <p data-i18n="project_media">Uma aplicação local para gerenciar downloads de mídia com fila de tarefas, progresso em tempo real e biblioteca de arquivos.</p>
+            <div class="project-tags"><span>Node.js</span><span>Express</span><span>yt-dlp</span></div>
+            <a class="project-link" href="https://github.com/Mendes0x/web-site-dowloader-mp3" target="_blank" rel="noopener noreferrer"><span data-i18n="view_repository">Ver repositório</span><span aria-hidden="true">↗</span></a>
           </div>
-          <figcaption><span>FIG. 01 — RENEGADE</span><span>IDENTITY / ARCHIVE</span></figcaption>
-        </figure>
-      </div>
-      <div class="hero-tail"><span>001 — PERSONAL PORTFOLIO</span><a href="#sobre">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
-    </section>
+        </article>
 
-    <section class="about section wrap" id="sobre" aria-labelledby="about-title">
-      <div class="section-meta"><span>01 / ABOUT</span><span>A LITTLE ABOUT ME</span></div>
-      <div class="about-grid">
-        <div class="reveal">
-          <h2 id="about-title" class="section-display">Always<br><em>in progress.</em></h2>
-        </div>
-        <div class="about-copy reveal">
-          <p class="about-intro">A melhor maneira de aprender é construir algo que ainda não existe.</p>
-          <p>Sou um desenvolvedor brasileiro interessado em web, automação, bots e no universo Linux. Entre uma interface e uma linha de comando, gosto de transformar ideias em projetos úteis.</p>
-          <p>Meu trabalho é feito de experimentação, curiosidade e evolução contínua. Sem fórmulas prontas. Apenas a vontade de fazer bem-feito.</p>
-          <a class="text-arrow" href="https://github.com/renegadothedev" target="_blank" rel="noopener noreferrer">Mais sobre mim no GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="about-bottom"><span>MAKE THINGS THAT MATTER.</span><span class="tiny-star" aria-hidden="true">✳</span></div>
-    </section>
-
-    <section class="work section" id="projetos" aria-labelledby="work-title">
-      <div class="wrap">
-        <div class="section-meta"><span>02 / SELECTED WORK</span><span>BUILDING REAL THINGS</span></div>
-        <div class="work-intro reveal">
-          <div>
-            <p class="eyebrow">A SELECTED ARCHIVE / OPEN SOURCE</p>
-            <h2 id="work-title" class="section-display">Things I've<br><em>made.</em></h2>
+        <article class="project project-featured reverse" data-category="web">
+          <div class="project-visual visual-dashboard" aria-hidden="true">
+            <span class="visual-index">PROJECT / 02</span>
+            <div class="dash-shell"><div class="dash-top"><span>● ● ●</span><span>BOT CONTROL / ONLINE</span></div><div class="dash-body"><div class="dash-sidebar"><i></i><i></i><i></i><i></i></div><div class="dash-main"><div class="dash-status"><span>STATUS</span><strong>● ACTIVE</strong></div><div class="dash-grid"><b></b><b></b><b></b><b></b></div><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+            <span class="visual-bottom">MANAGE / MONITOR / BUILD</span>
           </div>
-          <p>Uma seleção de projetos que desenvolvi — de aplicações web a ferramentas de automação. Simples, úteis e abertos para explorar.</p>
-        </div>
-        <div class="filters" role="group" aria-label="Filtrar projetos">
-          <span class="filters-caption">FILTER</span>
-          <button class="filter active" data-filter="all" type="button" aria-pressed="true">Todos <small>05</small></button>
-          <button class="filter" data-filter="web" type="button" aria-pressed="false">Web <small>02</small></button>
-          <button class="filter" data-filter="tools" type="button" aria-pressed="false">Ferramentas <small>03</small></button>
-        </div>
-        <div class="work-list">
-          <article class="work-item reveal" data-category="web">
-            <span class="work-index">01</span>
-            <div class="work-info"><span class="work-type">WEB APPLICATION / NODE.JS</span><h3>Bot Framework<br>Dashboard</h3><p>Painel para bots do Discord com status, métricas e comandos integrados.</p><div class="work-stack"><span>Node.js</span><span>Express</span><span>JavaScript</span></div></div>
-            <div class="work-art work-art--dashboard" aria-hidden="true"><div class="art-shell"><div class="art-top"><span>● ● ●</span><span>control.center</span></div><div class="art-content"><span class="art-label">OVERVIEW</span><div class="art-data"><b>Online</b><b>Active</b></div><div class="art-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
-            <a class="work-link" href="https://github.com/renegadothedev/bot-framework-dashboard" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do Bot Framework Dashboard no GitHub">↗</a>
-          </article>
-          <article class="work-item reveal" data-category="tools">
-            <span class="work-index">02</span>
-            <div class="work-info"><span class="work-type">SYSTEMS / BASH</span><h3>VPN Manager</h3><p>Gerenciador interativo de VPNs e diagnósticos para Linux e Termux.</p><div class="work-stack"><span>Bash</span><span>Linux</span><span>Termux</span></div></div>
-            <div class="work-art work-art--vpn" aria-hidden="true"><span class="art-big-symbol">⌘</span><span class="art-small-label">SECURE CONNECTIONS</span></div>
-            <a class="work-link" href="https://github.com/renegadothedev/vpn-tor" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do VPN Manager no GitHub">↗</a>
-          </article>
-          <article class="work-item reveal" data-category="tools">
-            <span class="work-index">03</span>
-            <div class="work-info"><span class="work-type">NETWORK / DIAGNOSTICS</span><h3>Network Toolkit</h3><p>Conjunto de utilitários de rede para ping, portas e traceroute.</p><div class="work-stack"><span>Bash</span><span>Nmap</span><span>Linux</span></div></div>
-            <div class="work-art work-art--network" aria-hidden="true"><span class="art-big-symbol">◎</span><span class="art-small-label">NETWORK / UTILITIES</span></div>
-            <a class="work-link" href="https://github.com/renegadothedev/Network-Toolkit" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do Network Toolkit no GitHub">↗</a>
-          </article>
-          <article class="work-item reveal" data-category="tools">
-            <span class="work-index">04</span>
-            <div class="work-info"><span class="work-type">AUTOMATION / BASH</span><h3>YouTube Downloader</h3><p>Downloads de áudio e vídeo com seleção de formato e histórico.</p><div class="work-stack"><span>Bash</span><span>yt-dlp</span><span>FFmpeg</span></div></div>
-            <div class="work-art work-art--download" aria-hidden="true"><span class="art-big-symbol">↓</span><span class="art-small-label">MEDIA / AUTOMATION</span></div>
-            <a class="work-link" href="https://github.com/renegadothedev/youtube-downloader" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do YouTube Downloader no GitHub">↗</a>
-          </article>
-          <article class="work-item reveal" data-category="web">
-            <span class="work-index">05</span>
-            <div class="work-info"><span class="work-type">WEB UTILITY / NODE.JS</span><h3>Media Downloader</h3><p>Interface web local para processar e baixar arquivos de áudio e vídeo.</p><div class="work-stack"><span>Node.js</span><span>Express</span><span>HTML/CSS</span></div></div>
-            <div class="work-art work-art--media" aria-hidden="true"><span class="art-big-symbol">▷</span><span class="art-small-label">PLAY / PROCESS / SAVE</span></div>
-            <a class="work-link" href="https://github.com/renegadothedev/web-site-dowloader-mp3" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do Media Downloader no GitHub">↗</a>
-          </article>
-        </div>
-        <p id="filter-status" class="filter-status" role="status" aria-live="polite"></p>
-        <a class="all-projects text-arrow" href="https://github.com/renegadothedev?tab=repositories" target="_blank" rel="noopener noreferrer">Explorar todos os repositórios <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="stack-section section wrap" id="stack" aria-labelledby="stack-title">
-      <div class="section-meta"><span>03 / TOOLS</span><span>WHAT I WORK WITH</span></div>
-      <div class="stack-grid">
-        <div class="reveal"><p class="eyebrow">TOOLS OF THE TRADE</p><h2 id="stack-title" class="section-display">My<br><em>toolkit.</em></h2><p class="stack-note">Tecnologias que utilizo, estudo e exploro. Sempre em evolução.</p></div>
-        <div class="stack-categories reveal">
-          <div class="stack-category"><span>01</span><div><h3>Languages</h3><p>JavaScript <b>/</b> TypeScript <b>/</b> Python <b>/</b> Bash</p></div></div>
-          <div class="stack-category"><span>02</span><div><h3>Web & Backend</h3><p>HTML <b>/</b> CSS <b>/</b> Node.js <b>/</b> Express <b>/</b> React</p></div></div>
-          <div class="stack-category"><span>03</span><div><h3>Systems & Tools</h3><p>Linux <b>/</b> Git <b>/</b> GitHub <b>/</b> Docker</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contato" aria-labelledby="contact-title">
-      <div class="wrap contact-inner">
-        <div class="contact-header"><span>04 / GET IN TOUCH</span><span>HAVE AN IDEA IN MIND?</span></div>
-        <p class="contact-intro">THE NEXT PROJECT STARTS HERE.</p>
-        <h2 id="contact-title">LET'S MAKE<br><em>IT REAL.</em></h2>
-        <div class="contact-bottom">
-          <p>Algum projeto em mente? Uma colaboração, uma pergunta ou só uma conversa sobre tecnologia — minha caixa de entrada está aberta.</p>
-          <div class="contact-actions">
-            <a href="mailto:renegadothedev001@gmail.com" class="email-link">Escreva para mim <span aria-hidden="true">↗</span></a>
-            <button type="button" id="copy-email" data-email="renegadothedev001@gmail.com" class="copy-link">Copiar e-mail <span aria-hidden="true">⧉</span></button>
-            <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
+          <div class="project-copy">
+            <span class="project-meta">02 / WEB DASHBOARD</span>
+            <h3>Bot Framework<span class="project-period">.</span></h3>
+            <p data-i18n="project_bot">Dashboard para bots do Discord com status, informações de execução, comandos e gerenciamento de módulos.</p>
+            <div class="project-tags"><span>JavaScript</span><span>Node.js</span><span>Express</span></div>
+            <a class="project-link" href="https://github.com/Mendes0x/bot-framework-dashboard" target="_blank" rel="noopener noreferrer"><span data-i18n="view_repository">Ver repositório</span><span aria-hidden="true">↗</span></a>
           </div>
+        </article>
+      </div>
+
+      <div class="more-heading"><h3 data-i18n="more_projects">Também no meu GitHub</h3><span>03—05 / ARCHIVE</span></div>
+      <div class="mini-projects">
+        <article class="mini-project" data-category="tools">
+          <div class="mini-top"><span>03 / SYSTEMS</span><span class="mini-symbol" aria-hidden="true">⌘</span></div>
+          <h4>VPN Manager</h4>
+          <p data-i18n="project_vpn">Controle e diagnóstico de conexões OpenVPN e NetworkManager no Linux.</p>
+          <div class="mini-bottom"><span>BASH / LINUX</span><a href="https://github.com/Mendes0x/vpn-tor" target="_blank" rel="noopener noreferrer" aria-label="VPN Manager no GitHub">↗</a></div>
+        </article>
+        <article class="mini-project" data-category="tools">
+          <div class="mini-top"><span>04 / NETWORK</span><span class="mini-symbol" aria-hidden="true">◎</span></div>
+          <h4>Network Toolkit</h4>
+          <p data-i18n="project_network">Utilitários para diagnóstico, rastreamento de rotas e análise de rede.</p>
+          <div class="mini-bottom"><span>BASH / NMAP</span><a href="https://github.com/Mendes0x/Network-Toolkit" target="_blank" rel="noopener noreferrer" aria-label="Network Toolkit no GitHub">↗</a></div>
+        </article>
+        <article class="mini-project" data-category="tools">
+          <div class="mini-top"><span>05 / AUTOMATION</span><span class="mini-symbol" aria-hidden="true">↓</span></div>
+          <h4>YouTube Downloader</h4>
+          <p data-i18n="project_youtube">Ferramenta em Bash para baixar mídia autorizada com opções de formato.</p>
+          <div class="mini-bottom"><span>BASH / YT-DLP</span><a href="https://github.com/Mendes0x/youtube-downloader" target="_blank" rel="noopener noreferrer" aria-label="YouTube Downloader no GitHub">↗</a></div>
+        </article>
+      </div>
+      <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+      <a class="browse-all" href="https://github.com/Mendes0x?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="see_everything">Explorar todos os projetos</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="skills section container" id="skills" aria-labelledby="skills-heading">
+    <div class="section-label"><span>03 / SKILLS</span><span class="section-rule"></span><span data-i18n="skills_label">MINHAS FERRAMENTAS</span></div>
+    <div class="skills-grid">
+      <div><h2 id="skills-heading" class="display-heading"><span data-i18n="skills_heading1">Sempre</span><br><em data-i18n="skills_heading2">aprendendo.</em></h2><p class="skills-note" data-i18n="skills_note">Tecnologias com as quais trabalho, estudo e experimento. Sem promessas exageradas, só evolução.</p></div>
+      <div class="skills-list">
+        <div class="skill-group"><span>01</span><div><h3>Languages</h3><p>JavaScript <i>/</i> TypeScript <i>/</i> Python <i>/</i> Bash</p></div></div>
+        <div class="skill-group"><span>02</span><div><h3>Web & Backend</h3><p>HTML <i>/</i> CSS <i>/</i> Node.js <i>/</i> Express <i>/</i> React</p></div></div>
+        <div class="skill-group"><span>03</span><div><h3>Systems & Tools</h3><p>Linux <i>/</i> Git <i>/</i> Docker <i>/</i> FFmpeg <i>/</i> Discord.js</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact-inner">
+      <div class="contact-top"><span>04 / CONTACT</span><span data-i18n="contact_top">TEM UMA IDEIA?</span></div>
+      <div class="contact-layout">
+        <div><p class="contact-eyebrow" data-i18n="contact_eyebrow">O PRÓXIMO PROJETO COMEÇA COM UMA CONVERSA.</p><h2 id="contact-heading"><span data-i18n="contact_heading1">Vamos criar</span><br><em data-i18n="contact_heading2">algo juntos?</em></h2></div>
+        <div class="contact-details"><p data-i18n="contact_description">Se quiser conversar sobre desenvolvimento, projetos ou alguma ideia, pode me chamar. Estou sempre aberto a boas conversas.</p>
+          <a class="contact-email" href="mailto:renegadothedev001@gmail.com">renegadothedev001@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-buttons"><button id="copy-email" data-email="renegadothedev001@gmail.com" type="button" data-i18n="copy_email">Copiar e-mail</button><a href="https://github.com/Mendes0x" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          <p id="copy-status" role="status" aria-live="polite" class="copy-status"></p>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="wrap footer-top"><a class="footer-brand" href="#topo">renegado<span>.</span></a><nav aria-label="Links sociais"><a href="https://github.com/renegadothedev" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:renegadothedev001@gmail.com">E-mail ↗</a><a href="#topo">Voltar ao topo ↑</a></nav></div>
-    <div class="wrap footer-bottom"><span>© <span id="year">2026</span> RENEGADO.</span><span>BUILT IN THE DARK. MADE IN BRAZIL.</span></div>
-  </footer>
-  <dialog id="palette" class="palette" aria-label="Navegação rápida">
-    <div class="palette-head"><span>QUICK NAVIGATION</span><button type="button" id="close-palette" aria-label="Fechar navegação rápida">ESC ✕</button></div>
-    <nav aria-label="Ir para seção">
-      <a href="#topo"><span>01</span> Início <b>↗</b></a>
-      <a href="#sobre"><span>02</span> Sobre <b>↗</b></a>
-      <a href="#projetos"><span>03</span> Projetos <b>↗</b></a>
-      <a href="#stack"><span>04</span> Stack <b>↗</b></a>
-      <a href="#contato"><span>05</span> Contato <b>↗</b></a>
-    </nav>
-    <div class="palette-foot">CTRL / ⌘ + K TO OPEN · ESC TO CLOSE</div>
-  </dialog>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#top" class="footer-logo">mendes<span>0x</span>.</a>
+    <span>© <span id="year">2026</span> MENDES0X</span>
+    <a href="#top" class="back-top"><span data-i18n="back_to_top">Voltar ao topo</span> ↑</a>
+  </div>
+</footer>
 </body>
 </html>
