@@ -35,14 +35,21 @@ test('project filters match exactly five project cards', () => {
   assert.match(css, /\[hidden\]\s*\{\s*display:none/);
 });
 test('all translated elements are represented in both dictionaries', () => {
-  const keys = [...html.matchAll(/data-i18n="([a-z_0-9]+)"/g)].map(match=>match[1]);
-  assert.ok(keys.length>=30);
+  const keys = [...html.matchAll(/data-i18n="([a-z_0-9]+)"/g)].map(match => match[1]);
+  assert.ok(keys.length >= 30);
+  const ptStart = js.indexOf('pt: {');
+  const enStart = js.indexOf('en: {', ptStart);
+  const endOfDictionaries = js.indexOf('let language =', enStart);
+  assert.ok(ptStart >= 0 && enStart > ptStart && endOfDictionaries > enStart);
+  const pt = js.slice(ptStart, enStart);
+  const en = js.slice(enStart, endOfDictionaries);
   for (const key of new Set(keys)) {
-    const matches = [...js.matchAll(new RegExp('(?:^|\\s|,)'+key+'\\s*:', 'gm'))];
-    assert.ok(matches.length>=2, 'translation incomplete for ' + key);
+    assert.ok(pt.includes(key + ':'), 'Portuguese translation missing: ' + key);
+    assert.ok(en.includes(key + ':'), 'English translation missing: ' + key);
   }
   assert.match(js, /document\.documentElement\.lang/);
 });
+
 test('supports accessible controls and reduced motion', () => {
   for (const id of ['main','primary-nav','menu-toggle','language-toggle','copy-email','copy-status','filter-status']) {
     assert.ok(html.includes('id="' + id + '"'), 'missing #' + id);
@@ -60,4 +67,25 @@ test('no remote javascript, tracking beacon or absolute asset paths', () => {
   assert.match(html, /href="\.\/style\.css"/);
   assert.match(html, /src="\.\/script\.js"/);
   assert.match(fs.readFileSync(path.join(root,'robots.txt'),'utf8'),/Sitemap: https:\/\/mendes0x\.github\.io/);
+});
+
+test('ultra-minimal design never includes profile photography or decorative images', () => {
+  assert.doesNotMatch(html, /<img\b/i);
+  assert.doesNotMatch(html, /avatars\.githubusercontent\.com/i);
+  assert.doesNotMatch(html, /hero-visual|portrait-frame|media-object|dash-shell/i);
+  assert.doesNotMatch(css, /background-image\s*:/i);
+  assert.doesNotMatch(html, /<canvas\b|<svg\b/i);
+  assert.match(css, /--bg:#f8f8f6/);
+  assert.match(html, /data-i18n="hero_line1">Menos ruído\./);
+  assert.match(html, /data-i18n="hero_line2">Mais intenção\./);
+});
+
+test('all portfolio projects are presented as keyboard-accessible links', () => {
+  assert.equal((html.match(/class="project" data-category=/g)||[]).length, 5);
+  assert.equal((html.match(/class="project-link"/g)||[]).length, 5);
+  assert.equal((html.match(/class="project-arrow"/g)||[]).length, 5);
+  for (const section of ['about','projects','skills','contact']) {
+    assert.ok(html.includes('id="' + section + '"'));
+  }
+  assert.match(css, /:focus-visible/);
 });
