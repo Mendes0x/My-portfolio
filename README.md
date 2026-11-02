@@ -1,63 +1,77 @@
-# Renegado — Building in the Dark
+# Mendes0x — Personal Portfolio
 
-Portfólio minimalista do desenvolvedor **Renegado**, inspirado no próprio perfil GitHub e na estética alternativa / dark / editorial.
+A clean, editorial portfolio about the things I build, learn, and experiment with.
 
-**Live:** https://renegadothedev.github.io/My-portfolio/
+**Live website:** [mendes0x.github.io/My-portfolio](https://mendes0x.github.io/My-portfolio/)  
+**GitHub profile:** [@Mendes0x](https://github.com/Mendes0x)
 
-## Identidade
+## About
 
-A reformulação parte da identidade do perfil: preto profundo, vermelho e vinho da imagem de perfil, detalhes sutis em roxo e letras expressivas. O site opta por espaço negativo, hierarquia e conteúdo, evitando dashboards decorativos e excesso de animações.
+A static, bilingual **Portuguese / English** personal website built with semantic HTML, CSS, and vanilla JavaScript. It uses a warm, paper-like palette, restrained blue-gray accents, refined typography, custom CSS illustrations, and the current GitHub avatar.
 
-- **Preto:** `#0D0A10`
-- **Vinho:** `#8B1E3F`
-- **Vermelho:** `#C43743`
-- **Roxo:** `#B57EDC`
-- **Tipografia:** DM Sans, Instrument Serif, DM Mono
+This repository contains only the front-end website. It requires **no Node.js server, database, API key, build step, or hosting service beyond static files**.
 
-## O que contém
+### Highlights
 
-- Hero editorial com foto de perfil atual do GitHub
-- Sobre / Selected Work / Stack / Contato
-- Cinco repositórios públicos reais com links de código
-- Filtros para projetos Web e Ferramentas
-- Menu responsivo, navegação rápida Ctrl+K / Cmd+K
-- Copiar e-mail com alternativa quando a API de Clipboard está indisponível
-- Conteúdo acessível com navegação por teclado, HTML semântico e suporte a redução de movimento
-- HTML, CSS e JavaScript puros; sem framework e sem build
+- Responsive editorial layout for mobile, tablet, and desktop.
+- Portfolio projects linked directly to their current GitHub repositories.
+- PT/EN language switch, with the choice saved locally when storage is available.
+- Filters for web projects and command-line tools.
+- Accessible navigation, visible keyboard focus, skip link, and reduced-motion support.
+- Email contact and clipboard button with a manual-copy fallback.
+- Updated title, canonical URL, Open Graph metadata, and a favicon.
+- Zero trackers, analytics scripts, or third-party JavaScript dependencies.
 
-## Projetos
+## Featured projects
 
-1. [Bot Framework Dashboard](https://github.com/renegadothedev/bot-framework-dashboard)
-2. [VPN Manager](https://github.com/renegadothedev/vpn-tor)
-3. [Network Toolkit](https://github.com/renegadothedev/Network-Toolkit)
-4. [YouTube Downloader](https://github.com/renegadothedev/youtube-downloader)
-5. [Media Downloader](https://github.com/renegadothedev/web-site-dowloader-mp3)
+| Project | Area |
+| --- | --- |
+| [MediaDock](https://github.com/Mendes0x/web-site-dowloader-mp3) | Local media studio |
+| [Bot Framework Dashboard](https://github.com/Mendes0x/bot-framework-dashboard) | Discord bot management |
+| [VPN Manager](https://github.com/Mendes0x/vpn-tor) | Linux and OpenVPN |
+| [Network Toolkit](https://github.com/Mendes0x/Network-Toolkit) | Network diagnostics |
+| [YouTube Downloader](https://github.com/Mendes0x/youtube-downloader) | Bash media automation |
 
-A prévia gráfica do Dashboard é uma ilustração conceitual, e não dados de funcionamento em tempo real.
+## Run locally
 
-## Começar
-
-Basta abrir `index.html` no navegador ou iniciar um servidor local:
+No installation required: open `index.html` in your browser, or serve the directory with:
 
 ```bash
 python -m http.server 8000
 ```
 
-Acesse http://localhost:8000.
+Open [localhost:8000](http://localhost:8000).
 
-## Arquivos
+For code checks, use Node.js 20+ and run:
 
-- `index.html` — estrutura semântica, seções, SEO e links
-- `style.css` — identidade visual, responsividade, efeitos
-- `script.js` — filtros, menu, modal e e-mail
-- `favicon.svg` — ícone do projeto
+```bash
+node --check script.js
+node --test tests/*.test.mjs
+```
 
-## Personalização
+## Publish with GitHub Pages
 
-Edite o conteúdo diretamente no `index.html`. Projetos usam `data-category="web"` ou `data-category="tools"`; se adicionar itens, atualize as contagens de filtros. O contato profissional corresponde ao que está no perfil GitHub: `renegadothedev001@gmail.com`.
+The site is designed for the root of the `main` branch:
 
-## Publicação
+1. Open [Settings → Pages](https://github.com/Mendes0x/My-portfolio/settings/pages).
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select **main**, **/(root)**, and save.
+4. The expected public address is **https://mendes0x.github.io/My-portfolio/**.
 
-Compatível com GitHub Pages servindo a raiz da branch `main`. A publicação efetiva depende das configurações do Pages.
+This was previously linked using the old GitHub username; the updated site uses `Mendes0x` across its canonical URL, metadata, and repository links.
 
-© Renegado · Building in the Dark.
+**Note:** GitHub Pages settings and DNS are managed by GitHub. A successful commit alone does not prove the live website is accessible; check the **Actions** and **Pages** tabs for deployment status.
+
+## Customize
+
+- `index.html` — page content, SEO, project cards, semantic layout.
+- `style.css` — palette, typography, responsive rules, original CSS artwork.
+- `script.js` — PT/EN text, navigation, filters and contact interaction.
+- `favicon.svg` — original monogram.
+- `tests/` — offline markup/link checks (no media downloads).
+
+Update both language dictionaries in `script.js` when adding translatable elements.
+
+---
+
+Built by [Mendes0x](https://github.com/Mendes0x). All links should point to content you have permission to share.
