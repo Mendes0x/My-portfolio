@@ -38,7 +38,7 @@ test('all translated elements are represented in both dictionaries', () => {
   const keys = [...html.matchAll(/data-i18n="([a-z_0-9]+)"/g)].map(match=>match[1]);
   assert.ok(keys.length>=30);
   for (const key of new Set(keys)) {
-    const matches = [...js.matchAll(new RegExp('(?:^|\\s|,)'+key+'\\s*:', 'gm'))];
+    const matches = [...js.matchAll(new RegExp('(?:^|\s|,)'+key+'\s*:', 'gm'))];
     assert.ok(matches.length>=2, 'translation incomplete for ' + key);
   }
   assert.match(js, /document\.documentElement\.lang/);
@@ -63,14 +63,14 @@ test('no remote javascript, tracking beacon or absolute asset paths', () => {
 });
 
 test('ultra-minimal design never includes profile photography or decorative images', () => {
-  assert.doesNotMatch(html, /<img\\b/i);
-  assert.doesNotMatch(html, /avatars\\.githubusercontent\\.com/i);
+  assert.doesNotMatch(html, /<img\b/i);
+  assert.doesNotMatch(html, /avatars\.githubusercontent\.com/i);
   assert.doesNotMatch(html, /hero-visual|portrait-frame|media-object|dash-shell/i);
-  assert.doesNotMatch(css, /background-image\\s*:/i);
-  assert.doesNotMatch(html, /<canvas\\b|<svg\\b/i);
+  assert.doesNotMatch(css, /background-image\s*:/i);
+  assert.doesNotMatch(html, /<canvas\b|<svg\b/i);
   assert.match(css, /--bg:#f8f8f6/);
-  assert.match(html, /data-i18n="hero_line1">Menos ruído\\./);
-  assert.match(html, /data-i18n="hero_line2">Mais intenção\\./);
+  assert.match(html, /data-i18n="hero_line1">Menos ruído\./);
+  assert.match(html, /data-i18n="hero_line2">Mais intenção\./);
 });
 
 test('all portfolio projects are presented as keyboard-accessible links', () => {
