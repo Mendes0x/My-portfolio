@@ -166,3 +166,22 @@ h1,h2,h3,p{margin:0}
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
+
+/* Layout hardening: long repository names and narrow mobile widths must not overflow. */
+html,body{max-width:100%}
+body{overflow-wrap:break-word}
+.project-content,.project-link,.hero-bottom,.header-row,.contact-details{min-width:0}
+.project-title,.contact-email{overflow-wrap:anywhere}
+.project-link:focus-visible{outline-offset:-3px}
+.filter:focus-visible,.language-toggle:focus-visible,.menu-toggle:focus-visible{outline-offset:3px}
+.project-link:hover{padding-left:0}
+.project-link:hover .project-arrow{transform:translate(2px,-2px)}
+@media(max-width:370px){
+  .hero h1{font-size:clamp(44px,12vw,51px);line-height:1.05}
+  .hero-actions{flex-wrap:wrap;row-gap:14px}
+  .contact-heading{font-size:clamp(45px,13vw,55px)}
+  .project-link{grid-template-columns:20px minmax(0,1fr) 20px;gap:8px}
+  .project-title{font-size:clamp(30px,9.5vw,38px)}
+  .project-tech{overflow-wrap:anywhere}
+  .header-actions{gap:10px}
+}
