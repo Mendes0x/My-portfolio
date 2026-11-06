@@ -11,7 +11,8 @@
       hero_eyebrow:'DESENVOLVEDOR INDEPENDENTE · BRASIL',
       hero_line1:'Menos ruído.',hero_line2:'Mais intenção.',
       hero_description:'Sou Mendes0x. Transformo ideias em sites, bots e ferramentas que unem funcionalidade, simplicidade e personalidade.',
-      view_projects:'Ver projetos',hero_footer:'CRIANDO, APRENDENDO E MELHORANDO SEMPRE',
+      view_projects:'Ver projetos',hero_footer:'CRIANDO, APRENDENDO E MELHORANDO SEMPRE',scroll_explore:'ROLE PARA EXPLORAR ↓',
+      section_about_index:'01 / SOBRE',section_work_index:'02 / PROJETOS',section_skills_index:'03 / HABILIDADES',section_contact_index:'04 / CONTATO',
       about_label:'UM POUCO SOBRE MIM',about_heading1:'Curiosidade',about_heading2:'que constrói.',
       about_lead:'A melhor maneira de aprender algo é transformar a ideia em um projeto real.',
       about_paragraph1:'Gosto de criar aplicações web, ferramentas de automação e bots para Discord. Entre interfaces e terminais Linux, busco soluções que sejam úteis, claras e fáceis de usar.',
@@ -20,6 +21,8 @@
       work_label:'PROJETOS SELECIONADOS',work_heading1:'Feito para',work_heading2:'ser usado.',
       work_intro:'Uma seleção de projetos públicos. Cada um nasceu de uma ideia, de um desafio ou da vontade de fazer algo funcionar melhor.',
       filter_label:'FILTRAR POR',filter_all:'Todos',filter_web:'Web',filter_tools:'Ferramentas',
+      project_type_media:'APLICAÇÃO WEB / NODE.JS',project_type_bot:'PAINEL / JAVASCRIPT',project_type_vpn:'SISTEMAS / BASH',project_type_network:'REDES / DIAGNÓSTICO',project_type_youtube:'AUTOMAÇÃO / TERMINAL',
+      skill_languages:'Linguagens',skill_web:'Web & Backend',skill_systems:'Sistemas & Ferramentas',
       project_media:'Uma aplicação local para gerenciar downloads de mídia com fila de tarefas, progresso em tempo real e biblioteca de arquivos.',
       project_bot:'Dashboard para bots do Discord com status, informações de execução, comandos e gerenciamento de módulos.',
       view_repository:'Ver repositório',
@@ -44,7 +47,8 @@
       hero_eyebrow:'INDEPENDENT DEVELOPER · BRAZIL',
       hero_line1:'Less noise.',hero_line2:'More meaning.',
       hero_description:"I'm Mendes0x. I turn ideas into websites, bots, and tools that combine function, simplicity, and personality.",
-      view_projects:'Explore projects',hero_footer:'BUILDING, LEARNING, AND GETTING BETTER',
+      view_projects:'Explore projects',hero_footer:'BUILDING, LEARNING, AND GETTING BETTER',scroll_explore:'SCROLL TO EXPLORE ↓',
+      section_about_index:'01 / ABOUT',section_work_index:'02 / PROJECTS',section_skills_index:'03 / SKILLS',section_contact_index:'04 / CONTACT',
       about_label:'A LITTLE ABOUT ME',about_heading1:'Curiosity',about_heading2:'that creates.',
       about_lead:'The best way to learn something is to turn an idea into a real project.',
       about_paragraph1:'I enjoy building web applications, automation tools, and Discord bots. From interfaces to Linux terminals, I focus on solutions that are useful, clear, and easy to use.',
@@ -53,6 +57,8 @@
       work_label:'SELECTED PROJECTS',work_heading1:'Made to',work_heading2:'be used.',
       work_intro:'A collection of public projects. Each started as an idea, a challenge, or a chance to make something work a little better.',
       filter_label:'FILTER BY',filter_all:'All',filter_web:'Web',filter_tools:'Tools',
+      project_type_media:'WEB APPLICATION / NODE.JS',project_type_bot:'DASHBOARD / JAVASCRIPT',project_type_vpn:'SYSTEMS / BASH',project_type_network:'NETWORK / DIAGNOSTICS',project_type_youtube:'AUTOMATION / TERMINAL',
+      skill_languages:'Languages',skill_web:'Web & Backend',skill_systems:'Systems & Tools',
       project_media:'A local media download manager with a job queue, real-time progress, and a dedicated file library.',
       project_bot:'A dashboard for Discord bots featuring status, runtime information, commands, and module management.',
       view_repository:'View repository',
@@ -104,6 +110,18 @@
       menuToggle.setAttribute('aria-label', open ? dict.menu_close : dict.menu_open);
     }
     document.title = language === 'pt' ? 'Mendes0x — Desenvolvedor' : 'Mendes0x — Developer';
+    const ogTitle = $('meta[property="og:title"]');
+    const ogDescription = $('meta[property="og:description"]');
+    const twitterTitle = $('meta[name="twitter:title"]');
+    const twitterDescription = $('meta[name="twitter:description"]');
+    const pageTitle = language === 'pt' ? 'Mendes0x — Desenvolvedor' : 'Mendes0x — Developer';
+    const pageDescription = language === 'pt'
+      ? 'Projetos web, automação e ferramentas criados com simplicidade, funcionalidade e atenção aos detalhes.'
+      : 'Web projects, automation, and tools built with simplicity, function, and attention to detail.';
+    if (ogTitle) ogTitle.content = pageTitle;
+    if (ogDescription) ogDescription.content = pageDescription;
+    if (twitterTitle) twitterTitle.content = pageTitle;
+    if (twitterDescription) twitterDescription.content = pageDescription;
     const ogLocale = $('meta[property="og:locale"]');
     if (ogLocale) ogLocale.content = language === 'pt' ? 'pt_BR' : 'en_US';
     const description = $('meta[name="description"]');
